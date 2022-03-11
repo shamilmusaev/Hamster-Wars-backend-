@@ -1,13 +1,9 @@
 
-// i serverfilen ska man först importera för att köra express, sedan lägger man in alla middleware, sedan alla routes och sist starta servern 
-
-//importera express
 
 const express = require('express')
 const app = express()
 const cors = require ('cors')
 const path = require ('path')
-const { nextTick } = require('process')
 const hamsters = require('./routes/hamsters.js')
 const matches = require("./routes/matches");
 const matchWinners = require("./routes/matchWinners");
@@ -15,7 +11,7 @@ const winners = require("./routes/winners");
 const losers = require("./routes/losers");
 
 
-const PORT = 1983
+const PORT = process.env.PORT || 1995
 const staticFolder = path.join(__dirname, 'static')
 
 
