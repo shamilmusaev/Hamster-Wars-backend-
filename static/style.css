@@ -1,0 +1,11 @@
+p{
+    color: lightgoldenrodyellow;
+    font-size: 50px;
+    text-shadow: 4px 2px 2px ;
+}
+
+main{
+    background-color: gray;
+    width: 50%;
+    height: 200px;
+}
